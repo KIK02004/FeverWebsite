@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    overflow-x: hidden;
+}
+
+body {
+    background: #262626;
+}
+
+#app {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 35vh;
+    border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.social img {
+    width: 2vw;
+}
+
+.social img:hover {
+    -webkit-filter: drop-shadow(0px 0px 2px #ffffff);
+    filter: drop-shadow(0px 0px 2px #ffffff);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.text p:nth-child(1) {
+    font-weight: bold;
+}
+
+.casinos {
+    width: 80vw;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.bc {
+    background: url('/assets/bc.png');
+    border-radius: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.starda {
+    background: url('/assets/starda.png');
+    border-radius: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#image-text-bc {
+    transition: opacity 0.4s;
+    height: 150px;
+}
+
+#image-text-starda {
+    transition: opacity 0.4s;
+    height: 150px;
+}
+
+.infos {
+    margin-top: 40px;
+    font-size: 9px;
+    max-width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.images {
+    margin-top: 20px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
